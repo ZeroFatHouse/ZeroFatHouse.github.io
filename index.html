@@ -1,607 +1,221 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>New Launch v1.0.0 | Responsive Coming Soon Page HTML</title>
-    <meta name="description" content="Premiun theme responsive Coming Soon Page HTML, clean code">
-    <meta name="keywords" content="	coming soon, construction, creative, design, fullpage, fullscreen, information, keyboard, maintenance, modern, onepage, perfect, responsive, smart">
-    <meta name="author" content="mzworks">
-    
-    <!-- Mobile meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="HTML5 Template">
-    
-    <!-- Start Header styles -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- End Header styles-->
-    
-    <!--Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-    
-    <!-- Favion -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
-    
-  </head>
-  <body>
-    <!-- Start Loader -->
-    <div class='loading'>
-      <div class='loader'>
-        <img height='80' src='images/loader.svg' width='80'>
-      </div>
-    </div>
-    <!-- End Loader -->
-    
-    <!-- Start Header -->
-    <header class='page-header' id='page-header'>
-      <div class='container-full'>
-        <div>
-          <div class='navbar-header'>
-            <!-- Logo -->
-            <a class='logo animated onstart' data-animation-delay='200' data-animation='fadeInDown' href='#'>
-              <!-- %img{:src => "images/logo.png", :alt => ""}/ -->
-              <div class='circle-logo-wrapper'>
-                <div class='circle'></div>
-                <i class="icon fa fa-rocket" aria-hidden="true"></i>
-              </div>
-              <strong>New</strong> Launch
-            </a>
-          </div>
-          
-          <!-- Social navigation -->
-          <div class='social-nav'>
-            <ul>
-              <li class='animated onstart' data-animation-delay='600' data-animation='fadeInDown' href='#'>
-                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Follow us on Facebook'>
-                  <i class='fa fa-facebook'></i>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Fat Menu</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=Lalezar&family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Top Navigation Menu -->
+        <div class="fixed-padding clearfix">
+            <a class="brand" href="#">
+                <img src="/img/zerofat-logo.png" alt="Zerofat logo"> </a>
+            <!-- Top Navigation Menu
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
                 </a>
-              </li>
-              <li class='animated onstart' data-animation-delay='700' data-animation='fadeInDown' href='#'>
-                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Follow us on Twitter'>
-                  <i class='fa fa-twitter'></i>
-                </a>
-              </li>
-              <li class='animated onstart' data-animation-delay='800' data-animation='fadeInDown' href='#'>
-                <a data-placement='bottom' data-toggle='tooltip' href='#' title='Follow us on Instagram'>
-                  <i class='fa fa-instagram'></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- End Social navigation -->
-          
+            </nav>-->
         </div>
-      </div>
     </header>
-    <!-- End Header -->
-    <!-- Sidebar navigation -->
-    <nav class='sidebar-nav' id='sidebar-nav'>
-      <ul>
-        <li>
-          <a href='#welcome'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              Home
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href='#about'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              About
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href='#gallery'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              Gallery
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href='#subscribe'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              Subscribe
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href='#services'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              Services
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href='#contacts'>
-            <span class='nav-dot'></span>
-            <span class='nav-label'>
-              Contacts
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- End Sidebar navigation -->
-    
-    <div class='page-wrap' id='fullpage'>
-      <!-- Particles Background -->
-      <canvas class='bg-particles' id='bg-particles'></canvas>
-      
-      <!-- Start Welcome -->
-      <section class='welcome section-content section background-parallax bg-image-1'>
-        <div class='overlay'></div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-12'>
-              <h1 class='section-title'>
-                We are <span class="highlight f-bold">coming</span> here soon
-              </h1>
-              <div id='clock'></div>
-              <div class='mg-t'>
-                <a class='btn btn-color btn-lg js-to-slide animated onstart' data-animation-delay='300' data-animation='fadeInUp' data-slide='4' href='#'>
-                  Notify Me
-                </a>
-                <a class='btn btn-outline btn-lg js-to-slide animated onstart' data-animation-delay='400' data-animation='fadeInUp' data-slide='2' href='#'>
-                  Learn more
-                  <i class='fa fa-angle-down'></i>
-                </a>
-              </div>
+    <section class="page-menu package">
+        <div class="package-menu fixed-padding">
+
+            <div class="package-title">
+                <h1 class="bg-red">الباقة بدون متابعة</h1>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Welcome -->
-      
-      <!-- Start About -->
-      <section class='about section background-parallax bg-image-2'>
-        <div class='overlay'></div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-12'>
-              <div class='hero-content'>
-                <h1 class='section-title text-left animated' data-animation-delay='0' data-animation='fadeInUp'>
-                  About us
-                </h1>
-              </div>
-              <div class='row'>
-                <div class='col-sm-6'>
-                  <div class='mg-b'>
-                    <p class='animated' data-animation-delay='100' data-animation='fadeInUp'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      A voluptatibus minus quasi facilis, aliquid ratione molestias,
-                      autem natus molestiae, accusamus sit recusandae iure voluptas
-                      atque ipsam assumenda tenetur rerum repellendus?
-                    </p>
-                  </div>
-                  <a class='btn btn-outline btn-lg js-link-video animated' data-animation-delay='200' data-animation='fadeInUp' data-slide='4' href='http://www.youtube.com/watch?v=Zs8T-FCEvXg'>
-                    Watch Video
-                    <i class="fa fa-play" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
+            <table class=" package-table ">
+                <tbody>
+                    <tr>
+                        <td class="bg-maron">
+                            <span class="package-cat">الموظفين</span>
+                        </td>
+                        <td class="bg-maron package-meal-second-col table-col-2">
+                            <span class="package-meal">وجبة + سلطة</span>
+                        </td>
+                        <td>
+                            <span class="package-price">900</span>
+                        </td>
+                        <td>
+                            <span class="package-currency ">ريال</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-red">
+                            <span class="package-cat">الذهبية</span>
+                        </td>
+                        <td class="bg-red package-meal-second-row package-meal-second-col table-col-2">
+                            <span class="package-meal">وجبتين + سلطة</span>
+                        </td>
+                        <td>
+                            <span class="package-price">1600</span>
+                        </td>
+                        <td>
+                            <span class="package-currency ">ريال</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="package-title package-table-last">
+                <h1 class="bg-red"> الباقة بالعتابعة </h1>
             </div>
-          </div>
+            <table class=" package-table">
+                <tbody>
+
+                    <tr>
+                        <td class="bg-maron">
+                            <span class=" package-cat ">البلاتينية</span>
+                        </td>
+                        <td class="bg-maron">
+                            <span class="package-meal ">ثلاث وجبات + زيارتين</span>
+                        </td>
+                        <td>
+                            <span class="package-price ">2000</span>
+                        </td>
+                        <td>
+                            <span class="package-currency ">ريال</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-red">
+                            <span class="package-cat ">VIP</span>
+                        </td>
+                        <td class="bg-red package-meal-second-row package-meal-second-col">
+                            <span class="package-meal package-meal-last">ثلاث وجبات + شوربة وسلطة اربع زيارات +</span>
+                        </td>
+                        <td>
+                            <span class="package-price">2800</span>
+                        </td>
+                        <td>
+                            <span class="package-currency ">ريال</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-      </section>
-      <!-- End About -->
-      
-      <!-- Start Gallery -->
-      <section class='section background-parallax bg-image-6'>
-        <div class='overlay'></div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-12'>
-              <div class='hero-content'>
-                <h1 class='section-title text-left animated' data-animation-delay='0' data-animation='fadeInUp'>
-                  Gallery
-                </h1>
-                <div class='js-gallery owl-carousel owl-theme'>
-                  <div class='gallery-slide'>
-                    <div class='gallery-row'>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #1
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
+    </section>
+    <section class="page-promo">
+        <div class="promo-a fixed-padding">
+            <div class="container">
+                <div class="center wrapper">
+                    <h1 class="promo-title">عرض</h1>
+                    <h2 class="promo-title-menu">Low Carb</h2>
+                    <div class="promo-detail-wrapper">
+                        <div class="promo-detail">
+                            <span class="promo-detail-price">SR  1550</span>
+                            <div class="promo-detail-content-header">شامل التوصيل والضريبة</div>
+                            <div class="promo-detail-content-body-top"><i>24</i> <span class="monthy-promo">يوم في الشهر</span></div>
+                            <div class="promo-detail-content-body-bottom">خصم خاص المشتركين الجدد</div>
                         </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #2'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #2
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #3'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #3
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
                     </div>
-                    <div class='gallery-row'>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #4'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #4
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #5'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #5
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #6'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #6
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="page-offer">
+        <div class="package fixed-width">
+            <div class="row">
+                <div class="column column-2">
+                    <div class="add-on-shrimp">
+                        <p><span>سالمون<br>
+                            وجمبري زبادة<br>
+                            150 ريال</span></p>
                     </div>
-                  </div>
-                  <div class='gallery-slide'>
-                    <div class='gallery-row'>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #1'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #1
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #2'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #2
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #3'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #3
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
+                </div>
+                <div class="column  ">
+                    <div class="wrapper-promo">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class=" offer-th-header">
+                                        <span class="offer-header ">عروضنا</span>
+                                    </th>
+                                    <tr>
+                                        <th colspan="3" class=" offer-th-title">
+                                            <span class="offer-title ">على الباقات الشهرية</span>
+                                        </th>
+                                    </tr>
+                            </thead>
+                            <tr>
+                                <td colspan="2 " class="page-offer-child-right">&nbsp;</td>
+                                <td class="page-offer-child-left">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2 " class="page-offer-child-right-header">وجبتين</td>
+                                <td class="page-offer-child-left promo-price">1250 ريال</td>
+                                <td class="page-offer-child-wing wing-first">الباقةتشمل</td>
+                            </tr>
+                            <tr>
+                                <td class="page-offer-child-right">3</td>
+                                <td>وجبات </td>
+                                <td class="page-offer-child-left promo-price">1650 ريال</td>
+                                <td class="page-offer-child-wing">دجاج</td>
+                            </tr>
+                            <tr>
+                                <td class="page-offer-child-right">4</td>
+                                <td>وجبات </td>
+                                <td class="page-offer-child-left promo-price">2050 ريال</td>
+                                <td class="page-offer-child-wing">لحم</td>
+                            </tr>
+                            <tr>
+                                <td class="page-offer-child-right">5</td>
+                                <td>وجبات </td>
+                                <td class="page-offer-child-left promo-price">2250 ريال</td>
+                                <td class="page-offer-child-wing wing-last">سمك</td>
+                            </tr>
+                            <tr>
+                                <td class="page-offer-child-right">6</td>
+                                <td>وجبات </td>
+                                <td class="page-offer-child-left promo-price">2450 ريال</td>
+                            </tr>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3 " class="page-offer-child-bottom">الشامله الضريبة</td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
-                    <div class='gallery-row'>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #4'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #4
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #5'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #5
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                      <a class='gallery-item' href='http://placehold.it/1920x1080.jpg' title='Free Space #6'>
-                        <img alt='' class='img-responsive' src='http://placehold.it/380x250.jpg'>
-                        <div class='title'>
-                          Free Space #6
-                          <p class='sub-title'>
-                            New Launch
-                          </p>
-                        </div>
-                        <div class='icon'>
-                          <i class='fa fa-search-plus'></i>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- End Gallery -->
-      
-      <!-- Start Subscribe -->
-      <section class='subscribe section background-parallax bg-image-3'>
-        <div class='overlay'></div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-6'>
-              <h1 class='section-title'>
-                Subscribe
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam sint aliquam rem, quis beatae, dolorum totam provident laboriosam
-              </p>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-sm-5 animated' data-animation-delay='300' data-animation='fadeInUp'>
-              <form action='#' class='mailchimp-form subscribe-form-wrap'>
-                <div class='input-group'>
-                  <input class='form-control' name='email' placeholder='Your email' type='email'>
-                  <div class='input-group-btn'>
-                    <button class='btn btn-outline btn-inverse' type='submit'>
-                      Go
-                      <i class='fa fa-angle-right'></i>
-                    </button>
-                  </div>
-                </div>
-                <p class='error-message'></p>
-                <p class='success-message'></p>
-              </form>
-            </div>
-          </div>
+    </section>
+    <footer class="page-footer ">
+        <div class="page-footer-content  clearfix ">
+            <nav>
+                <ul>
+                    <li>
+                        <h6 class="copyright ">2021 ZeroFat house. All Rights Reserved &copy;</h6>
+                    </li>
+                    <li> <small class="private-policy "><a href="# ">Gallery </a></small></li>
+                    <li><small class="contact-us "><a href="# ">Contact us</a></small></li>
+                </ul>
+            </nav>
         </div>
-      </section>
-      <!-- End Subscribe -->
-      
-      <!-- Start Services -->
-      <section class='about section background-parallax section-no-space bg-image-2'>
-        <div class='overlay light'></div>
-        <div class='owl-carousel full-page-carousel owl-theme'>
-          <div class='item'>
-            <div class='carousel-item-inner js-vertical-middle text-center'>
-              <h1 class='section-title'>
-                Services
-              </h1>
-            </div>
-          </div>
-          <div class='item bg-image-4'>
-            <div class='overlay'></div>
-            <div class='carousel-item-inner js-vertical-middle'>
-              <div class='text-center'>
-                <div class='mg-b'>
-                  <i class='fa fa-line-chart ico-box icon-box-lg'></i>
-                  <h3 class='f-thin'>
-                    Forward
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
-                  </p>
-                </div>
-                <a class='btn btn-outline'>
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class='item color-dark bg-white'>
-            <div class='carousel-item-inner js-vertical-middle'>
-              <div class='text-center'>
-                <div class='mg-b'>
-                  <i class='fa fa-globe ico-box icon-box-lg'></i>
-                  <h3 class='f-thin'>
-                    Wall
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
-                  </p>
-                </div>
-                <a class='btn btn-outline-dark'>
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class='item bg-primary'>
-            <div class='overlay'></div>
-            <div class='carousel-item-inner js-vertical-middle'>
-              <div class='text-center'>
-                <div class='mg-b'>
-                  <i class='fa fa-support ico-box icon-box-lg'></i>
-                  <h3 class='f-thin'>
-                    Support
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
-                  </p>
-                </div>
-                <a class='btn btn-outline'>
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class='item'>
-            <div class='carousel-item-inner js-vertical-middle'>
-              <div class='text-center'>
-                <div class='mg-b'>
-                  <i class='fa fa-file-o ico-box icon-box-lg'></i>
-                  <h3 class='f-thin'>
-                    Files
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequuntur eum enim commodi, minima
-                  </p>
-                </div>
-                <a class='btn btn-outline' href='#'>
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Custom Navigation -->
-        <div class='owl-carousel-nav'>
-          <div class='owl-btn prev'>
-            <i class='fa fa-chevron-left'></i>
-          </div>
-          <div class='owl-btn next'>
-            <i class='fa fa-chevron-right'></i>
-          </div>
-        </div>
-      </section>
-      <!-- End Services -->
-      
-      <!-- Start Contacts -->
-      <section class='section-content contacts section background-parallax bg-image-4'>
-        <div class='overlay'></div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-6'>
-              <h1 class='section-title animated' data-animation-delay='50' data-animation='fadeInUp'>
-                Contacts
-              </h1>
-              <form action='#' id='contact-form'>
-                <div class='form-wrap'>
-                  <div class='form-group animated' data-animation-delay='100' data-animation='fadeInUp'>
-                    <input class='form-control form-control-no-space border-bottom' id='contact-form-name' name='name' placeholder='Name' type='text'>
-                  </div>
-                  <div class='form-group animated' data-animation-delay='200' data-animation='fadeInUp'>
-                    <input class='form-control form-control-no-space border-bottom' id='contact-form-email_contact-form-email' name='email' placeholder='Email' type='text'>
-                  </div>
-                  <div class='form-group animated' data-animation-delay='300' data-animation='fadeInUp'>
-                    <textarea class='form-control form-control-no-space border-bottom' cols='30' id='contact-form-message' name='message' placeholder='Message' rows='5'></textarea>
-                  </div>
-                  <div class='form-group mg-t'>
-                    <button class='btn btn-color btn-lg btn-submit animated' data-animation-delay='350' data-animation='fadeInUp' type='submit'>
-                      Send Message
-                      <i class='fa fa-paper-plane'></i>
-                    </button>
-                  </div>
-                </div>
-                <div class='mgs'>
-                  <div class='success-message'>
-                    <i class='fa fa-check'></i>
-                    Your message has been sent successfully.
-                  </div>
-                  <div class='error-message'>
-                    <i class='fa fa-warning'></i>
-                    E-mail must be valid
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Contacts -->
-      
-    </div>
-    <!-- Start Footer -->
-    <footer class='page-footer'>
-      <div class='container-full'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div>
-              Made with <i class="fa fa-heart highlight" aria-hidden="true"></i> in
-              <a href='https://themeforest.net/user/mzworks/portfolio?ref=mzworks' target='_blank'>mzworks</a>
-            </div>
-            <div class='copyright'>© 2017 - 2030 All rights reserved</div>
-          </div>
-        </div>
-      </div>
     </footer>
-    <!-- End Footer -->
-    
-    <!-- Start Scripts -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    
-    <script src="js/jquery.easing.1.3.js"></script>
-    
-    <!-- Bootsrap plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Countdown -->
-    <script src="js/jquery.countdown.js"></script>
-    
-    <!-- Youtube player -->
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    
-    <!-- Others -->
-    <script src="js/jquery.fullPage.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    
-    <!-- Mailchimp -->
-    <script src="js/jquery.ajaxchimp.js"></script>
-    
-    <!-- Particles -->
-    <script src="js/particles.js"></script>
-    
-    <!-- Moment -->
-    <script src="js/moment.js"></script>
-    <!-- Magnific popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    
-    <!-- Main -->
-    <script src="js/main.js"></script>
-    <!-- End Scripts -->
-  </body>
+</body>
+<script>
+</script>
+
 </html>

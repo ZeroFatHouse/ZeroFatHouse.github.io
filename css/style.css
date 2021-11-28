@@ -1,1048 +1,394 @@
-body,
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: "El Messiri", sans-serif;
-    font-size: 16px;
-    color: #1a1917;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 0.5em;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    ;
-}
-
-a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-.bg-red {
-    background-color: #ed1b24;
-}
-
-.bg-maron {
-    background-color: #5d0b0f;
-}
-
-.fixed-padding {
-    padding: 0 3em 3em 3em;
-}
-
-a:hover,
-a:visited,
-a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.container {
-    padding-top: 5rem;
-}
-
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
-
-/*=========================
-Header
-============================*/
-
-.page-header {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.page-header .brand img {
-    width: 250px;
-    padding-top: 1em;
-    float: left;
-}
-
-.page-header nav {
-    float: right;
-    font-family: sans-serif;
-    text-transform: uppercase;
-}
-
-.page-header nav li {
-    color: #010101;
-    float: left;
-    margin-right: 4em;
-    padding-top: 4em;
-}
-
-.page-header nav li:last-child {
-    margin-right: 0;
-}
-
-
-/*=========================
-Body
-============================*/
-
-
-/*=========================
-Page Package
-============================*/
-
-.page-menu:before {
-    background: url(/img/package-top-bc-01.png) no-repeat center left;
-    background-size: cover;
-    background-size: 10em;
-    bottom: 1px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.page-menu:after {
-    background: url(/img/package-buttom-bc-01.png) no-repeat center center;
-    background-size: cover;
-    bottom: 2px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-}
-
-.page-menu {
-    height: 100vh;
-    background: url(/img/package-bc-001.png);
-}
-
-.package {
-    padding-top: 5rem;
-}
-
-.package-menu {
-    z-index: 1;
-}
-
-.package-table {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.package-table td,
-th {
-    text-align: right;
-}
-
-.package-table td {
-    padding: 1rem 0 1rem 0;
-}
-
-.package-title {
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.package-title h1 {
-    padding: 0.3em 0.3em 0.3em;
-    margin: 0 0 0.1rem;
-    color: #e0dee3;
-    border-radius: 2rem 2rem 0 0;
-    width: 340px;
-}
-
-.package-cat {
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 0 1rem 0 4rem;
-    color: #e0dee3;
-}
-
-.package-meal {
-    font-size: 1.6rem;
-    font-weight: normal;
-    padding: 0 1rem 0 2rem;
-    color: #e0dee3;
-}
-
-.package-meal-second-row {
-    border-bottom-left-radius: 2rem;
-}
-
-.package-meal-second-col {
-    border: solid 1px rgb(87, 79, 79);
-    border-style: none solid none none;
-}
-
-.table-col-2 {
-    padding-left: 15em !important;
-}
-
-.package-price {
-    font-size: 1.6rem;
-    font-weight: 700;
-    padding: 0 1rem 0 0.5rem;
-    color: #e71e26;
-}
-
-.package-currency {
-    font-size: 1.6rem;
-    font-weight: 300;
-}
-
-.package-table-last {
-    margin-top: 1rem;
-}
-
-
-/*=========================
-Page promo
-============================*/
-
-.page-promo:before {
-    background: url(/img/offer-bc-left.png) no-repeat bottom left;
-    background-size: contain;
-    bottom: 1px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.page-promo:after {
-    background: url(/img/offer-bc-lbootom.png) no-repeat bottom right;
-    background-size: contain;
-    bottom: 1px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.page-promo {
-    height: 100vh;
-    background: url(/img/promo-bc.png);
-    z-index: -1;
-    position: relative;
-}
-
-.promo-title {
-    font-size: 4em;
-    font-weight: 700;
-    color: #000;
-    text-align: center;
-    -ms-transform: rotate(-4deg);
-    /* IE 9 */
-    transform: rotate(-4deg);
-}
-
-.promo-title-menu {
-    font-family: Tahoma, sans-serif;
-    font-size: 6em;
-    text-align: center;
-    font-weight: 900;
-    color: #009b02;
-    text-shadow: 0.2rem -0.3rem #033a00;
-    z-index: 1;
-}
-
-.promo-detail-wrapper {
-    margin-top: -5em;
-}
-
-.promo-detail {
-    text-align: center;
-    -ms-transform: rotate(-4deg);
-    /* IE 9 */
-    transform: rotate(-4deg);
-    padding: 8em;
-}
-
-.promo-detail-price:before {
-    background: url(/img/promo-price.png) no-repeat top;
-    background-size: 75% 50%;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    margin-right: -9rem;
-    z-index: -1;
-    top: -1px;
-}
-
-.promo-detail-price {
-    font-size: 5em;
-    font-weight: 700;
-    font-family: Tahoma, sans-serif;
-    color: #043b02;
-    -webkit-text-stroke: 2px #f4f4f4;
-    /* width and color */
-}
-
-.promo-detail-content-header {
-    font-weight: 700;
-    color: #00a728;
-    margin-top: -0.5rem;
-    padding: 0.5rem;
-    font-size: 2em;
-}
-
-.promo-detail-content-body-top {
-    padding: 0.1em 0 0 0;
-    font-weight: 700;
-    font-size: 2em;
-}
-
-.promo-detail-content-body-top i {
-    color: #00a728;
-}
-
-.monthy-promo {
-    font-family: "Lemonada", sans-serif;
-    font-weight: bold;
-}
-
-.promo-detail-content-body-bottom {
-    padding: 0.5em 0 0 0;
-    font-weight: 700;
-    font-size: 2em;
-}
-
-.promo-detail {
-    background: url(/img/promo-detail-background.png) no-repeat center center;
-    background-size: cover;
-}
-
-
-/*=========================
-Page promo
-============================*/
-
-.page-offer:after {
-    background: url(/img/offers-bc-lbootom-2.png) no-repeat bottom right;
-    background-size: cover;
-    bottom: 1px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-
-/* Create two equal columns that floats next to each other */
-
-.page-offer {
-    height: 100vh;
-    background: url(/img/package-bc-002.png);
-    font-family: "Lalezar"sans-serif;
-    position: relative;
-}
-
-.page-offer table {
-    font-size: 1.5em;
-    font-weight: 800;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: auto;
-    width: 85%;
-}
-
-.offer-th-header {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #bf0014;
-    border-top-left-radius: 2rem;
-}
-
-.offer-th-title {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-right: 0.2rem solid #bf0014;
-    border-left: 0.2rem solid #bf0014;
-    border-bottom: 0.2rem solid #bf0014;
-}
-
-.offer-header {
-    font-size: 1.5em;
-    padding-right: 2rem;
-    color: ivory;
-    display: block;
-}
-
-.offer-title {
-    font-size: 1.5em;
-    padding-right: 2rem;
-    display: block;
-    color: #5d0b0f;
-}
-
-.page-offer-child-right-header {
-    border-right: 0.2rem solid #bf0014;
-}
-
-.page-offer-child-right {
-    border-right: 0.2rem solid #bf0014;
-    color: #bf0014;
-}
-
-.page-offer-child-left {
-    border-left: 0.2rem solid #bf0014;
-}
-
-.page-offer-child-bottom {
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    border-left: 0.2rem solid #bf0014;
-    border-right: 0.2rem solid #bf0014;
-    border-bottom: 0.2rem solid #bf0014;
-    color: #bf0014;
-    text-align: center;
-}
-
-.page-offer-child-wing {
-    background-color: #bf0014;
-    color: #f4f4f4;
-    line-height: 1rem;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-}
-
-.wing-first {
-    border-top-left-radius: 2rem;
-}
-
-.wing-last {
-    border-bottom-left-radius: 2rem;
-}
-
-.page-offer table td {
-    padding: 10px 10px;
-}
-
-.promo-price {
-    padding-right: 50px !important;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 100vh;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* culumn 2 */
-
-.add-on-shrimp {
-    font-size: 1.6em;
-    line-height: 1.5em;
-    text-align: center;
-    height: 215px;
-    width: 215px;
-    margin-top: 6.5em;
-    color: #E62022;
-}
-
-.add-on-shrimp p {
-    padding: 5rem 0;
-    background: url(/img/shrimp-monthly-promo.png) no-repeat center right;
-}
-
-.add-on-shrimp p span {
-    margin-bottom: -3rem;
-    line-height: 2rem;
-    display: block;
-}
-
-
-/*=========================
-Footer
-============================*/
-
-.page-footer:before {
-    content: " ";
-    display: block;
-    height: 7px;
-    background: url(/img/pattern.png) left top repeat-x;
-}
-
-.page-footer {
-    background-color: #f4f4f4;
-    color: #9b9b9b;
-    font-size: 1rem;
-    height: 70px;
-}
-
-.page-footer nav {
-    font-family: sans-serif;
-}
-
-.page-footer nav li {
-    float: left;
-    margin-right: 4em;
-}
-
-.page-footer-content {
-    padding: 1em 0;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* For desktop: */
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    /* For tablets: */
-    /*=========================
-Header
-============================*/
-    .center {
-        margin: auto;
-        width: 100%;
-        padding: 10px;
+    body,
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
     }
-    .fixed-padding {
-        padding: 0 2em 0 2em;
+    
+    body {
+        font-family: "El Messiri", sans-serif;
+        font-size: 16px;
+        color: #1a1917;
+        overflow-x: hidden;
     }
-    .page-header .brand img {
-        width: 150px;
-        float: left;
+    
+    .bg-red {
+        background-color: #ed1b24;
     }
-    .page-header nav {
-        float: right;
-        font-family: sans-serif;
-        text-transform: uppercase;
+    
+    .bg-maron {
+        background-color: #5d0b0f;
     }
-    .page-header nav li {
-        color: #010101;
-        float: left;
+    
+    .bg-black {
+        background-color: #000000;
     }
-    .page-header nav li:last-child {
-        margin-right: 0;
+    
+    .txt-white {
+        color: #f4f4f4;
+    }
+    
+    .txt-red {
+        color: #ed1b24;
+    }
+    
+    .txt-black {
+        color: #000;
+    }
+    
+    .taper-section-top,
+    .taper-section-bottom {
+        position: relative;
     }
     /*=========================
-Body
+PLAN PACKAGE
 ============================*/
-    /*=========================
-Page Package
-============================*/
-    .page-menu:before {
-        background: none;
+    
+    .package-plan:before {
+        background-image: url("../img/package-buttom-bc-01.png");
+        background-repeat: no-repeat;
         background-size: cover;
-        z-index: -2;
+        background-position: bottom center;
+        bottom: -1px;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
     }
-    .page-menu:after {
-        background: url(/img/package-buttom-bc-01.png) no-repeat center bottom;
-        background-size: contain;
+    
+    .package-plan {
+        height: 100vh;
+        background: url(../img/package-bc-001.png);
+        background-size: cover;
     }
-    .package {
-        padding-top: 5rem;
+    
+    .wrapper-plan {
+        font-family: "El Messiri", sans-serif;
     }
+    
+    .plan-title {
+        text-align: right;
+        border-radius: 2rem 2rem 0 0;
+        width: 300px;
+    }
+    
+    .plan-title h1 {
+        margin-right: 1rem;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    
+    .package-plan table {
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: 0;
+        color: #f4f4f4;
+    }
+    
     .package-table td,
     th {
         text-align: right;
     }
-    .package-table td {
-        padding-top: 0.5rem;
-        text-align: center;
-    }
-    .package-title {
-        padding-top: 1rem;
-    }
-    .package-title h1 {
-        padding: 1rem 1rem 0.3rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-    .package-cat {
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding: 0.5rem 1rem 0 1rem;
-    }
-    .package-meal {
-        font-size: 1.2rem;
-        font-weight: normal;
-        padding-left: 2em;
-    }
-    .table-col-2 {
-        padding-left: 8em !important;
-    }
-    .package-price {
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 0 1rem 0 0.5rem;
-    }
-    .package-table-last {
-        margin-top: 1rem;
-    }
-    /*=========================
-Page promo
-============================*/
-    .page-promo:before {
-        background: url(/img/offer-bc-left.png) no-repeat center left;
-        background-size: contain;
-        bottom: 1px;
-        content: "";
-        height: 70%;
-        width: 100%;
-    }
-    .page-promo:after {
-        background: url(/img/offer-bc-lbootom.png) no-repeat bottom right;
-        background-size: contain;
-        content: "";
-        height: 70%;
-        width: 100%;
-    }
-    .page-promo {
-        height: 100vh;
-        background: url(/img/promo-bc.png), no-repeat;
-        background-size: contain;
-        z-index: -1;
-    }
-    .promo-title {
-        font-size: 2.5em;
-        font-weight: 600;
-        padding-bottom: 1rem;
-    }
-    .promo-title-menu {
-        font-size: 3em;
-        font-weight: 900;
-        padding-bottom: 2rem;
-    }
-    .promo-detail {
-        text-align: center;
-        padding: 4em;
-    }
-    .promo-detail-price:before {
-        background: url(/img/promo-price.png) no-repeat top;
-        background-size: 60% 40%;
-    }
-    .promo-detail-price {
-        font-size: 3em;
-        font-weight: 700;
-    }
-    .promo-detail-content-header {
-        font-weight: 700;
-        padding: 0.5rem;
-        font-size: 1.5em;
-        padding-top: 1.5rem;
-    }
-    .promo-detail-content-body-top {
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-    .monthy-promo {
-        font-weight: bold;
-        font-size: 0.9em;
-    }
-    .promo-detail-content-body-bottom {
-        padding: 0.5em 0 0 0;
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-    .promo-detail {
-        background: url(/img/promo-detail-background.png) no-repeat center center;
-        background-size: 75% 90%;
-        ;
-    }
-    /*=========================
-Page promo
-============================*/
-    .page-offer:after {
-        background: url(/img/offers-bc-lbootom-2.png) no-repeat bottom right;
-        background-size: contain;
-        bottom: 1px;
-        content: "";
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
-    /* Create two equal columns that floats next to each other */
-    .page-offer {
-        height: 100%;
-        background: url(/img/package-bc-002.png);
-        font-family: "Lalezar"sans-serif;
-        position: relative;
-    }
-    .page-offer .row {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .page-offer table {
-        font-size: 1.2em;
-    }
-    .offer-th-header {
-        padding-top: 1rem;
-    }
-    .offer-th-title {
-        padding-bottom: 1rem;
-    }
-    .offer-header {
-        font-size: 1.2em;
-    }
-    .offer-title {
-        font-size: 1.2em;
-    }
-    .wing-first {
-        border-top-left-radius: 2rem;
-    }
-    .wing-last {
+    
+    .package-meal-second-row {
         border-bottom-left-radius: 2rem;
     }
-    .page-offer table td {
-        padding: 8px 8px;
+    
+    .package-table .package-meal-second-col {
+        white-space: nowrap;
     }
-    .promo-price {
-        padding-right: 50px !important;
+    
+    .package-table td span {
+        margin-right: 1rem;
+        padding-left: 1rem;
     }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 100vh;
+    
+    .package-table td .package-price {
+        padding-left: 0.1rem;
     }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    
+    .package-table td .package-currency {
+        margin-right: 0.1rem;
     }
-    /* culumn 2 */
-    .column-2 {
-        margin-top: -10rem;
-        height: 20rem;
-    }
-    .add-on-shrimp {
-        font-size: 1.6em;
-        line-height: 1.5em;
-        text-align: center;
-        height: 215px;
-        width: 215px;
-        color: #E62022;
-        margin: auto;
-        left: 50%;
-    }
-    .add-on-shrimp p {
-        padding: 5rem 0;
-        background: url(/img/shrimp-monthly-promo.png) no-repeat center right;
-    }
-    .add-on-shrimp p span {
-        margin-bottom: -3rem;
-        line-height: 2rem;
-        display: block;
-    }
-    /*=========================
-Footer
-============================*/
-    .page-footer:before {
-        content: " ";
-        display: block;
-        height: 7px;
-        background: url(/img/pattern.png) left top repeat-x;
-    }
-    .page-footer {
-        background-color: #f4f4f4;
-        color: #9b9b9b;
-        font-size: 0.9rem;
-        height: 70px;
-        position: relative;
-    }
-    .page-footer nav {
-        font-family: sans-serif;
-    }
-    .page-footer nav li {
-        float: left;
-        margin-right: 4em;
-    }
-    .page-footer-content {
-        padding: 1em 0;
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .center {
-        margin: auto;
-        width: 100%;
-        padding: 3px;
-    }
-    .fixed-padding {
-        padding: 0;
-    }
-    .page-header {}
-    .page-header .brand img {
-        width: 150px;
-        float: left;
-    }
-    .page-header nav {
-        float: right;
-        font-family: sans-serif;
-        text-transform: uppercase;
-    }
-    .page-header nav li {
-        color: #010101;
-        float: left;
-    }
-    .page-header nav li:last-child {
-        margin-right: 0;
-    }
-    /*=========================
-Body
-============================*/
-    /*=========================
-Page Package
-============================*/
-    .page-menu:before {
-        background: none;
-        background-size: cover;
-        z-index: -2;
-    }
-    .page-menu:after {
-        background: url(/img/package-buttom-bc-01.png) no-repeat bottom center;
-        background-size: contain;
-    }
-    .page-menu {
-        position: relative;
-    }
-    .package {
-        padding-top: 5rem;
-    }
-    .package-menu {
-        padding: 0 2rem 0 2rem;
-        border: 1px solid green;
-    }
-    .package-table {
-        border: 1px solid blue;
-        margin: auto;
-        left: -2em;
-    }
-    .package-table td,
-    th {
-        text-align: right;
-    }
-    .package-table td {
-        padding-top: 0.2rem;
-        text-align: center;
-    }
-    .package-title {
-        padding-top: 0.5rem;
-    }
-    .package-title h1 {
-        padding: 1rem 1rem 0.3rem 0rem;
-        font-size: 1rem;
-        font-weight: 600;
-        width: 200px;
-        border: 1px solid green;
-    }
-    .package-cat {
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 0.5rem 1rem 0 1rem;
-    }
-    .package-meal {
-        font-size: 1rem;
-        font-weight: normal;
-        padding-left: 2em;
-    }
-    .table-col-2 {
-        padding-left: 1em !important;
-    }
+    
     .package-price {
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 700;
         padding: 0 1rem 0 0.5rem;
+        color: #e71e26;
     }
+    
     .package-currency {
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .package-table-last {
-        margin-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
     }
     /*=========================
-Page promo
+PROMO
 ============================*/
+    
     .page-promo:before {
-        background: url(/img/offer-bc-left.png) no-repeat center left;
-        background-size: contain;
-        bottom: 1px;
-        content: "";
-        height: 70%;
-        width: 100%;
-    }
-    .page-promo:after {
-        background: url(/img/offer-bc-lbootom.png) no-repeat bottom right;
+        background: url(../img/offer-bc-left.png)no-repeat bottom left;
         background-size: contain;
         content: "";
-        height: 70%;
+        height: 100%;
+        position: absolute;
         width: 100%;
-    }
-    .page-promo {
-        height: 100vh;
-        background: url(/img/promo-bc.png), no-repeat;
-        background-size: contain;
         z-index: -1;
+        margin: auto;
+        left: -1rem;
     }
-    .promo-title {
-        font-size: 2.5em;
-        font-weight: 600;
-        padding-bottom: 1rem;
-    }
-    .promo-title-menu {
-        font-size: 3em;
-        font-weight: 900;
-        padding-bottom: 2rem;
-    }
-    .promo-detail {
-        text-align: center;
-        padding: 4em;
-    }
-    .promo-detail-price:before {
-        background: url(/img/promo-price.png) no-repeat top;
-        background-size: 60% 40%;
-    }
-    .promo-detail-price {
-        font-size: 3em;
-        font-weight: 700;
-    }
-    .promo-detail-content-header {
-        font-weight: 700;
-        padding: 0.5rem;
-        font-size: 1.5em;
-        padding-top: 1.5rem;
-    }
-    .promo-detail-content-body-top {
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-    .monthy-promo {
-        font-weight: bold;
-        font-size: 0.9em;
-    }
-    .promo-detail-content-body-bottom {
-        padding: 0.5em 0 0 0;
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-    .promo-detail {
-        background: url(/img/promo-detail-background.png) no-repeat center center;
-        background-size: 75% 90%;
-        ;
-    }
-    /*=========================
-Page promo
-============================*/
-    .page-offer:after {
-        background: url(/img/offers-bc-lbootom-2.png) no-repeat bottom right;
+    
+    .page-promo:after {
+        background: url(../img/offer-bc-lbootom.png) no-repeat bottom right;
         background-size: contain;
         bottom: 1px;
         content: "";
         height: 100%;
         position: absolute;
         width: 100%;
+        margin: auto;
+        right: -1rem;
+        z-index: -1;
     }
-    /* Create two equal columns that floats next to each other */
-    .page-offer {
-        height: 100%;
-        background: url(/img/package-bc-002.png);
-        font-family: "Lalezar"sans-serif;
+    
+    .page-promo {
+        height: 100vh;
+        background: url(../img/promo-bc.png);
         position: relative;
+        z-index: 1;
     }
-    .page-offer .row {
-        display: flex;
-        flex-direction: column-reverse;
+    
+    .promo-title {
+        font-size: 4em;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        -ms-transform: rotate(-4deg);
+        /* IE 9 */
+        transform: rotate(-4deg);
     }
-    .page-offer table {
-        font-size: 1.2em;
+    
+    .promo-title-menu {
+        font-family: Tahoma, sans-serif;
+        font-size: 6em;
+        text-align: center;
+        font-weight: 900;
+        color: #009b02;
+        text-shadow: 0.2rem -0.3rem #033a00;
+        z-index: 1;
     }
+    
+    .promo-detail {
+        text-align: center;
+        -ms-transform: rotate(-4deg);
+        /* IE 9 */
+        transform: rotate(-4deg);
+        z-index: 2;
+    }
+    
+    .promo-detail-price:before {
+        background: url(../img/promo-price.png);
+        background-repeat: no-repeat;
+        background-size: 50% 60%;
+        background-position: top right;
+        content: "";
+        bottom: -1px;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        top: -3rem;
+        margin: auto;
+        margin-right: -5rem;
+    }
+    
+    .promo-detail-price {
+        font-size: 5em;
+        font-weight: 700;
+        font-family: Tahoma, sans-serif;
+        color: #043b02;
+        -webkit-text-stroke: 2px #f4f4f4;
+        /* width and color */
+    }
+    
+    .promo-detail-content-header {
+        font-weight: 700;
+        color: #00a728;
+        margin-top: -0.5rem;
+        padding: 0.5rem 0 0 0;
+        font-size: 2em;
+    }
+    
+    .promo-detail-content-body-top {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    
+    .promo-detail-content-body-top i {
+        color: #00a728;
+    }
+    
+    .monthy-promo {
+        font-family: "Lemonada", sans-serif;
+        font-weight: bold;
+    }
+    
+    .promo-detail-content-body-bottom {
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1.9em;
+        padding-bottom: 2rem;
+    }
+    
+    .promo-detail-content-body-bottom span {
+        padding-bottom: 3rem;
+        margin-top: -5em;
+    }
+    
+    .promo-detail:before {
+        background: url(../img/promo-detail-background.png) no-repeat center center;
+        background-size: contain;
+        bottom: 1px;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        right: -1rem;
+        z-index: -1;
+    }
+    /*=========================
+PLAN OFFER
+============================*/
+    
+    .monthly-packages:after {
+        background-image: url("../img/offers-bc-lbootom-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        bottom: -1px;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    
+    #monthly-package {
+        height: 100vh;
+        background: url(../img/package-bc-002.png);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .wrapper-monthly-package {}
+    
+    .monthly-packages .wrapper-monthly-package .row {
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .wrapper-promo {
+        margin-top: 5rem;
+    }
+    
+    .monthly-packages table {
+        font-size: 1.5em;
+        font-weight: 800;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: auto;
+        margin-right: 0;
+        position: relative;
+        table-layout: fixed;
+    }
+    
+    .monthly-packages table tbody tr td {
+        text-align: right;
+        padding: 0.5rem;
+    }
+    
     .offer-th-header {
-        padding-top: 1rem;
+        background-color: #bf0014;
+        border-top-left-radius: 2rem;
     }
+    
     .offer-th-title {
-        padding-bottom: 1rem;
+        border-right: 0.2rem solid #bf0014;
+        border-left: 0.2rem solid #bf0014;
+        border-bottom: 0.2rem solid #bf0014;
     }
+    
     .offer-header {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        padding-right: 2rem;
+        color: ivory;
+        display: block;
     }
+    
     .offer-title {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        display: block;
+        color: #5d0b0f;
+        white-space: nowrap;
     }
+    
+    .page-offer-child-right-header {
+        border-right: 0.2rem solid #bf0014;
+    }
+    
+    .page-offer-child-right {
+        border-right: 0.2rem solid #bf0014;
+        color: #bf0014;
+    }
+    
+    .page-offer-child-left {
+        border-left: 0.2rem solid #bf0014;
+    }
+    
+    .page-offer-child-bottom {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-left: 0.2rem solid #bf0014;
+        border-right: 0.2rem solid #bf0014;
+        border-bottom: 0.2rem solid #bf0014;
+        color: #bf0014;
+        text-align: center;
+    }
+    
+    .page-offer-child-wing {
+        background-color: #bf0014;
+        color: #f4f4f4;
+        line-height: 1rem;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+    
     .wing-first {
         border-top-left-radius: 2rem;
     }
+    
     .wing-last {
         border-bottom-left-radius: 2rem;
     }
+    
     .page-offer table td {
-        padding: 8px 8px;
+        padding: 10px 10px;
     }
-    .promo-price {
-        padding-right: 50px !important;
+    
+    .wrapper-promo2 {
+        margin: auto;
+        margin-right: 0;
     }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 100vh;
+    
+    .wrapper-promo {
+        margin: auto;
+        margin-right: 0;
     }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    /* culumn 2 */
-    .column-2 {
-        margin-top: -10rem;
-        height: 20rem;
-    }
+    
     .add-on-shrimp {
         font-size: 1.6em;
         line-height: 1.5em;
@@ -1050,43 +396,516 @@ Page promo
         height: 215px;
         width: 215px;
         color: #E62022;
-        margin: auto;
-        left: 50%;
+        margin-top: 6rem;
     }
+    
     .add-on-shrimp p {
         padding: 5rem 0;
-        background: url(/img/shrimp-monthly-promo.png) no-repeat center right;
+        background: url(../img/shrimp-monthly-promo.png) no-repeat center right;
     }
+    
     .add-on-shrimp p span {
         margin-bottom: -3rem;
         line-height: 2rem;
         display: block;
     }
+    
+    .monthly-packages .row {
+        flex-direction: row-reverse;
+    }
     /*=========================
-Footer
+Gallery
 ============================*/
+    
+    .page-gallery {
+        position: relative;
+    }
+    
+    .page-contact {
+        font-family: sans-serif;
+        background-color: #CCCCCC;
+    }
+    
     .page-footer:before {
         content: " ";
         display: block;
         height: 7px;
-        background: url(/img/pattern.png) left top repeat-x;
+        background: url(../img/pattern.png) left top repeat-x;
     }
+    
     .page-footer {
-        background-color: #f4f4f4;
-        color: #9b9b9b;
-        font-size: 0.9rem;
-        height: 70px;
+        font-family: sans-serif;
+        background-color: #ADADAC;
+        color: #000;
+        font-size: 1rem;
         position: relative;
     }
-    .page-footer nav {
-        font-family: sans-serif;
+    
+    @media only screen and (min-width: 768px) {}
+    /* For desktop: */
+    /* For tablet: */
+    
+    @media only screen and (min-width: 575px) and (max-width: 768px) {
+        .navbar-brand img {
+            width: 180px;
+            height: auto;
+        }
+        .package-plan:before {
+            background-image: url("../img/768xpackage-buttom-bc-01.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            bottom: -1px;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        .package-table .package-meal-second-col {
+            white-space: normal;
+        }
+        /* promo-page: */
+        .page-promo:before {
+            background: url(../img/offer-bc-left.png) no-repeat bottom left;
+            background-size: contain;
+        }
+        .page-promo:after {
+            background: url(../img/offer-bc-lbootom.png) no-repeat bottom right;
+            background-size: contain;
+            bottom: 1px;
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            margin: auto;
+            right: -1rem;
+            z-index: -1;
+        }
+        .page-promo {
+            height: 100%;
+        }
+        .promo-title {
+            font-size: 3em;
+        }
+        .promo-title-menu {
+            font-family: Tahoma, sans-serif;
+            font-size: 4em;
+        }
+        .promo-detail-price:before {
+            background: url(../img/promo-price.png);
+            background-repeat: no-repeat;
+            background-size: 50% 45%;
+            background-position: top right;
+            content: "";
+            bottom: -1px;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            top: -3rem;
+            margin: auto;
+            margin-right: -5rem;
+        }
+        .promo-detail-price {
+            font-size: 3em;
+        }
+        .promo-detail-content-header {
+            font-size: 1.5em;
+        }
+        .promo-detail-content-body-top {
+            font-size: 1.5em;
+        }
+        .promo-detail-content-body-bottom {
+            font-size: 1.1em;
+            padding-bottom: 4rem;
+        }
+        /* Package monthly: */
+        .monthly-packages:after {
+            background-image: url("../img/768xoffers-bc-lbootom-2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            bottom: -1px;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        #monthly-package {
+            height: 100%;
+            background: url(../img/package-bc-002.png);
+            background-size: contain;
+            position: relative;
+            z-index: 1;
+        }
+        .monthly-packages .wrapper-monthly-package .row {
+            margin: auto;
+            margin-left: 0;
+        }
+        .wrapper-promo {
+            margin-top: 5rem;
+        }
+        .monthly-packages table {
+            font-size: 1.5em;
+            font-weight: 800;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: auto;
+            margin-right: 0;
+            position: relative;
+            table-layout: fixed;
+        }
+        .monthly-packages table tbody tr td {
+            text-align: right;
+            padding: 0.5rem;
+        }
+        .offer-th-header {
+            background-color: #bf0014;
+            border-top-left-radius: 2rem;
+        }
+        .offer-th-title {
+            border-right: 0.2rem solid #bf0014;
+            border-left: 0.2rem solid #bf0014;
+            border-bottom: 0.2rem solid #bf0014;
+        }
+        .offer-header {
+            font-size: 1.5em;
+            padding-right: 2rem;
+            color: ivory;
+            display: block;
+        }
+        .offer-title {
+            font-size: 1.5em;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            display: block;
+            color: #5d0b0f;
+            white-space: nowrap;
+        }
+        .page-offer-child-right-header {
+            border-right: 0.2rem solid #bf0014;
+        }
+        .page-offer-child-right {
+            border-right: 0.2rem solid #bf0014;
+            color: #bf0014;
+        }
+        .page-offer-child-left {
+            border-left: 0.2rem solid #bf0014;
+        }
+        .page-offer-child-bottom {
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-left: 0.2rem solid #bf0014;
+            border-right: 0.2rem solid #bf0014;
+            border-bottom: 0.2rem solid #bf0014;
+            color: #bf0014;
+            text-align: center;
+        }
+        .page-offer-child-wing {
+            background-color: #bf0014;
+            color: #f4f4f4;
+            line-height: 1rem;
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+        .wing-first {
+            border-top-left-radius: 2rem;
+        }
+        .wing-last {
+            border-bottom-left-radius: 2rem;
+        }
+        .page-offer table td {
+            padding: 10px 10px;
+        }
+        .wrapper-promo2 {
+            margin: auto;
+            margin-right: 0;
+        }
+        .wrapper-promo {
+            margin: auto;
+            margin-right: 0;
+        }
+        .add-on-shrimp {
+            font-size: 1.6em;
+            line-height: 1.5em;
+            text-align: center;
+            height: 215px;
+            width: 215px;
+            color: #E62022;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+        }
+        .add-on-shrimp p {
+            padding: 5rem 0;
+            background: url(../img/shrimp-monthly-promo.png) no-repeat center right;
+        }
+        .add-on-shrimp p span {
+            margin-bottom: -3rem;
+            line-height: 2rem;
+            display: block;
+        }
+        .monthly-packages .row {
+            flex-direction: column-reverse;
+        }
     }
-    .page-footer nav li {
-        float: left;
-        margin-right: 4em;
+    /* For tablet: */
+    
+    @media screen and (max-width: 575px) {
+        /* Extra Small Devices */
+        .navbar-brand img {
+            width: 150px;
+            height: auto;
+        }
+        .package-plan:before {
+            background-image: url("../img/600xpackage-buttom-bc-01.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom center;
+            bottom: -1px;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        .package-table .package-meal-second-col {
+            white-space: normal;
+        }
+        .package-plan {
+            height: 100%;
+            background: url(../img/package-bc-001.png);
+            background-size: cover;
+        }
+        .wrapper-plan {
+            font-family: "El Messiri", sans-serif;
+        }
+        .plan-title {
+            text-align: right;
+            border-radius: 2rem 2rem 0 0;
+            width: 200px;
+        }
+        .plan-title h1 {
+            margin-right: 1rem;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .package-plan table {
+            font-size: 1em;
+            margin-left: auto;
+            margin-right: 0;
+            color: #f4f4f4;
+        }
+        .package-table td,
+        th {
+            text-align: right;
+        }
+        .package-meal-second-row {
+            border-bottom-left-radius: 2rem;
+        }
+        .package-table td span {
+            margin-right: 1rem;
+            padding-left: 1rem;
+        }
+        .package-table td .package-price {
+            padding-left: 0.1rem;
+        }
+        .package-table td .package-currency {
+            margin-right: 0.1rem;
+        }
+        .package-price {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0 1rem 0 0.5rem;
+            color: #e71e26;
+        }
+        .package-currency {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        /* promo-page: */
+        .page-promo:before {
+            background: url(../img/offer-bc-left.png) no-repeat bottom left;
+            background-size: contain;
+        }
+        .page-promo:after {
+            background: url(../img/offer-bc-lbootom.png) no-repeat bottom right;
+            background-size: contain;
+            bottom: 1px;
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            margin: auto;
+            right: -1rem;
+            z-index: -1;
+        }
+        .page-promo {
+            height: 100%;
+        }
+        .promo-title {
+            font-size: 2em;
+        }
+        .promo-title-menu {
+            font-family: Tahoma, sans-serif;
+            font-size: 3em;
+        }
+        .promo-detail-price:before {
+            background: url(../img/promo-price.png);
+            background-repeat: no-repeat;
+            background-size: 50% 35%;
+            background-position: top right;
+            content: "";
+            bottom: -1px;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            top: -3rem;
+            margin: auto;
+            margin-right: -2rem;
+        }
+        .promo-detail-price {
+            font-size: 2em;
+        }
+        .promo-detail-content-header {
+            font-size: 1em;
+        }
+        .promo-detail-content-body-top {
+            font-size: 1em;
+        }
+        .promo-detail-content-body-bottom {
+            font-size: 1em;
+            padding-bottom: 2rem;
+        }
+        /* Package monthly: */
+        .monthly-packages:after {
+            background-image: url("../img/768xoffers-bc-lbootom-2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            bottom: -1px;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        #monthly-package {
+            height: 100%;
+            background: url(../img/package-bc-002.png);
+            background-size: contain;
+            position: relative;
+            z-index: 1;
+        }
+        .monthly-packages .wrapper-monthly-package .row {
+            margin: auto;
+            margin-left: 0;
+        }
+        .wrapper-promo {
+            margin-top: 2rem;
+        }
+        .monthly-packages table {
+            font-size: 1em;
+            font-weight: 800;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: auto;
+            margin-right: 0;
+            position: relative;
+            table-layout: fixed;
+        }
+        .monthly-packages table tbody tr td {
+            text-align: right;
+            padding: 0.5rem;
+        }
+        .offer-th-header {
+            background-color: #bf0014;
+            border-top-left-radius: 2rem;
+        }
+        .offer-th-title {
+            border-right: 0.2rem solid #bf0014;
+            border-left: 0.2rem solid #bf0014;
+            border-bottom: 0.2rem solid #bf0014;
+            padding-left: 5rem;
+        }
+        .offer-header {
+            font-size: 1.5em;
+            padding-right: 0.5rem;
+            color: ivory;
+            display: block;
+        }
+        .offer-title {
+            font-size: 1.5em;
+            padding-right: 1rem;
+            display: block;
+            color: #5d0b0f;
+            white-space: nowrap;
+        }
+        .page-offer-child-right-header {
+            border-right: 0.2rem solid #bf0014;
+        }
+        .page-offer-child-right {
+            border-right: 0.2rem solid #bf0014;
+            color: #bf0014;
+        }
+        .page-offer-child-left {
+            border-left: 0.2rem solid #bf0014;
+        }
+        .page-offer-child-bottom {
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-left: 0.2rem solid #bf0014;
+            border-right: 0.2rem solid #bf0014;
+            border-bottom: 0.2rem solid #bf0014;
+            color: #bf0014;
+            text-align: center;
+        }
+        .page-offer-child-wing {
+            background-color: #bf0014;
+            color: #f4f4f4;
+            line-height: 1rem;
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+        .wing-first {
+            border-top-left-radius: 2rem;
+        }
+        .wing-last {
+            border-bottom-left-radius: 2rem;
+        }
+        .page-offer table td {
+            padding: 10px 10px;
+        }
+        .wrapper-promo2 {
+            margin: auto;
+            margin-right: 0;
+        }
+        .wrapper-promo {
+            margin: auto;
+            margin-right: 0;
+        }
+        .add-on-shrimp {
+            font-size: 1.4em;
+            line-height: 1.5em;
+            text-align: center;
+            height: 215px;
+            width: 215px;
+            color: #E62022;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+        }
+        .add-on-shrimp p {
+            padding: 5rem 0;
+            background: url(../img/shrimp-monthly-promo.png) no-repeat center right;
+        }
+        .add-on-shrimp p span {
+            margin-bottom: -3rem;
+            line-height: 2rem;
+            display: block;
+        }
+        .monthly-packages .row {
+            flex-direction: column-reverse;
+        }
     }
-    .page-footer-content {
-        padding: 1em 0;
-        position: absolute;
-    }
-}

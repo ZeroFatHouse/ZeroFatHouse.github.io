@@ -9,7 +9,7 @@
         font-family: "El Messiri", sans-serif;
         font-size: 16px;
         color: #1a1917;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     
     .bg-red {
@@ -745,8 +745,8 @@ Gallery
             border-bottom-left-radius: 2rem;
         }
         .package-table td span {
-            margin-right: 1rem;
-            padding-left: 1rem;
+            margin-right: 0.5rem;
+            padding-left: 0.5rem;
         }
         .package-table td .package-price {
             padding-left: 0.1rem;
@@ -757,7 +757,7 @@ Gallery
         .package-price {
             font-size: 1rem;
             font-weight: 700;
-            padding: 0 1rem 0 0.5rem;
+            padding: 0 0.1rem 0 0.1rem;
             color: #e71e26;
         }
         .package-currency {
@@ -794,7 +794,7 @@ Gallery
         .promo-detail-price:before {
             background: url(../img/promo-price.png);
             background-repeat: no-repeat;
-            background-size: 50% 35%;
+            background-size: 70% 35%;
             background-position: top right;
             content: "";
             bottom: -1px;
@@ -870,13 +870,13 @@ Gallery
             border-bottom: 0.2rem solid #bf0014;
         }
         .offer-header {
-            font-size: 1.5em;
+            font-size: 1.3em;
             padding-right: 0.5rem;
             color: ivory;
             display: block;
         }
         .offer-title {
-            font-size: 1.5em;
+            font-size: 1.1em;
             padding-right: 1rem;
             display: block;
             color: #5d0b0f;
@@ -905,8 +905,8 @@ Gallery
             background-color: #bf0014;
             color: #f4f4f4;
             line-height: 1rem;
-            padding-right: 20px !important;
-            padding-left: 20px !important;
+            padding-right: 10px !important;
+            padding-left: 10px !important;
         }
         .wing-first {
             border-top-left-radius: 2rem;
@@ -915,7 +915,7 @@ Gallery
             border-bottom-left-radius: 2rem;
         }
         .page-offer table td {
-            padding: 10px 10px;
+            padding: 5px 5px;
         }
         .wrapper-promo2 {
             margin: auto;

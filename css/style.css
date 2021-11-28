@@ -75,12 +75,12 @@ PLAN PACKAGE
     
     .plan-title h1 {
         margin-right: 1rem;
-        font-size: 1.7em;
+        font-size: 2em;
         font-weight: bold;
     }
     
     .package-plan table {
-        font-size: 1.5em;
+        font-size: 2em;
         margin-left: auto;
         margin-right: 0;
         color: #f4f4f4;
@@ -93,10 +93,6 @@ PLAN PACKAGE
     
     .package-meal-second-row {
         border-bottom-left-radius: 2rem;
-    }
-    
-    .package-table .package-meal-second-col {
-        white-space: nowrap;
     }
     
     .package-table td span {
@@ -113,14 +109,14 @@ PLAN PACKAGE
     }
     
     .package-price {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
         padding: 0 1rem 0 0.5rem;
         color: #e71e26;
     }
     
     .package-currency {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 300;
     }
     /*=========================
@@ -281,8 +277,6 @@ PLAN OFFER
         position: relative;
         z-index: 1;
     }
-    
-    .wrapper-monthly-package {}
     
     .monthly-packages .wrapper-monthly-package .row {
         margin: auto;
@@ -464,6 +458,52 @@ Gallery
         }
         .package-table .package-meal-second-col {
             white-space: normal;
+        }
+        .plan-title {
+            text-align: right;
+            border-radius: 2rem 2rem 0 0;
+            width: 300px;
+        }
+        .plan-title h1 {
+            margin-right: 1rem;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+        .package-plan table {
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-right: 0;
+            color: #f4f4f4;
+        }
+        .package-table td,
+        th {
+            text-align: right;
+        }
+        .package-meal-second-row {
+            border-bottom-left-radius: 2rem;
+        }
+        .package-table .package-meal-second-col {
+            white-space: normal;
+        }
+        .package-table td span {
+            margin-right: 1rem;
+            padding-left: 1rem;
+        }
+        .package-table td .package-price {
+            padding-left: 0.1rem;
+        }
+        .package-table td .package-currency {
+            margin-right: 0.1rem;
+        }
+        .package-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0 1rem 0 0.5rem;
+            color: #e71e26;
+        }
+        .package-currency {
+            font-size: 1.5rem;
+            font-weight: 300;
         }
         /* promo-page: */
         .page-promo:before {
@@ -783,7 +823,7 @@ Gallery
         .monthly-packages:after {
             background-image: url("../img/768xoffers-bc-lbootom-2.png");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: bottom center;
             bottom: -1px;
             content: "";
@@ -828,7 +868,6 @@ Gallery
             border-right: 0.2rem solid #bf0014;
             border-left: 0.2rem solid #bf0014;
             border-bottom: 0.2rem solid #bf0014;
-            padding-left: 5rem;
         }
         .offer-header {
             font-size: 1.5em;

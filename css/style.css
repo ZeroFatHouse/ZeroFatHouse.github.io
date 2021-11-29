@@ -549,6 +549,7 @@ Gallery
         }
         .promo-detail-price {
             font-size: 3em;
+            -webkit-text-stroke: 1px #f4f4f4;
         }
         .promo-detail-content-header {
             font-size: 1.5em;
@@ -808,6 +809,7 @@ Gallery
         }
         .promo-detail-price {
             font-size: 2em;
+            -webkit-text-stroke: 1px #f4f4f4;
         }
         .promo-detail-content-header {
             font-size: 1em;
